@@ -1,0 +1,35 @@
+{{/* Simple List View Template for Hugo Blox Builder */}}
+<div class="view-list">
+  <div class="container">
+    {{ with .page }}
+      <div class="section-heading">
+        <h1>{{ .Title }}</h1>
+        {{ with .Content }}<div class="article-style">{{ . }}</div>{{ end }}
+      </div>
+    {{ end }}
+    
+    <div class="row">
+      {{ range .page.Pages }}
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            {{ with .Params.image }}
+              {{ if .filename }}
+                <a href="{{ $.page.RelPermalink }}">
+                  <img src="{{ .filename | relURL }}" class="card-img-top" alt="{{ .alt_text }}">
+                </a>
+              {{ end }}
+            {{ end }}
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h5>
+              {{ with .Params.summary }}
+                <p class="card-text">{{ . }}</p>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

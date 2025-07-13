@@ -1,0 +1,46 @@
+
+# Appearance
+appearance:
+  mode: system
+  font: minimal
+  font_size: L
+  color: blue
+
+# SEO
+marketing:
+  seo:
+    site_type: Person
+    local_business_type: ''
+    org_name: ''
+    description: 'Sean Chiang - Quantitative Finance and Machine Learning specialist in asset pricing, risk management, and data science applications in finance.'
+    twitter: 'GetResearchDev'
+  analytics:
+    google_analytics: ''
+    baidu_tongji: ''
+    plausible: ''
+    fathom: ''
+    pirsch: ''
+  verification:
+    google: ''
+    baidu: ''
+
+# Site header
+header:
+  navbar:
+    enable: true
+    blox: "navbar"
+    fixed_to_top: true
+    show_search: true
+    show_theme_chooser: true
+    logo:
+      text: "Sean Chiang"
+
+# Site footer
+features:
+footer:
+  copyright:
+      notice: ''
+  math:
+    enable: false
+  privacy_pack:
+    enable: false

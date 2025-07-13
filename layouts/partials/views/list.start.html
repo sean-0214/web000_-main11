@@ -1,0 +1,11 @@
+{{/* list.start partial for Hugo Blox Builder */}}
+<div class="view-list">
+  <div class="container">
+    {{ with .page }}
+      <div class="section-heading">
+        <h1>{{ .Title }}</h1>
+        {{ with .Content }}<div class="article-style">{{ . }}</div>{{ end }}
+      </div>
+    {{ end }}
+    
+    <div class="row">
